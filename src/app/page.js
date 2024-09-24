@@ -1,7 +1,7 @@
 
 import Header from "./section/Header"
 import Hero from "./section/Hero";
-import Companies from "./section/Companies";
+import Stats from "./section/Companies";
 import Services from "./section/Services";
 import Testimonials from "./section/Testimonials";
 import CTA from "./section/CTA";
@@ -14,7 +14,7 @@ export default function Home() {
     <main>
      <Header/>
      <Hero/>
-     <Companies/>
+     <Stats/>
      <About/>
      <Services/>
      <Testimonials/>

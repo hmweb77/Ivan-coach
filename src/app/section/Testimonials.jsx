@@ -8,29 +8,24 @@ import Image from "next/image";
 const Testimonials = () => {
 	const testimonialData = [
 		{
-			name: "Howard Woods",
-			jobTitle: "Lead Developer",
+			
+			name: "Frederico Fonseca",
+			jobTitle: "CEO, Outsafe IT",
 			comment:
-				"I struggled with public speaking until I started working with Joanna. Her coaching on presentations and cultural differences was eye-opening. Learning how to give and receive constructive feedback has also improved my relationships at work. I can't thank her enough for her guidance.",
+				"Working with Ivan in my past roll was a very rewarding experience, as Ivan is a very good professional and has excellent focus on the projects he leads, and he is also an excellent partner to work with.",
 		},
 		{
-			name: "Pamela Allen",
-			jobTitle: "Entrepreneur",
+			name: "Abílio Guimarães",
+			jobTitle: "Business Manager, Movelpartes",
 			comment:
-				"Joanna's coaching on public speaking and presentations was incredibly effective. Her tips on navigating cultural differences and giving constructive feedback have enhanced my communication skills significantly. I feel more confident and competent in my professional interactions.",
+				"I worked with Ivan approximately 2 years in several projects. I must recognised to him the availability to work as a team member, the fantastic relationship with co-workers and clients, the technical acknowledgment, the loyalty, his work availability, etc. In summary, Ivan is a benefit to any team in which he works.",
 		},
 	
 		{
-			name: "Joshua Hawkins",
-			jobTitle: "Influencer",
+			name: "Luíz Filho",
+			jobTitle: "Tech Support Analyst, Mosyle Corporation",
 			comment:
-				"The coaching I received from Joanna on career change and motivation was outstanding. She provided practical advice for gaining recognition and managing difficult conversations. I now approach these challenges with confidence and a clear strategy. Her coaching made all the difference.",
-		},
-		{
-			name: "Lisa Guerrero",
-			jobTitle: "Head of Marketing",
-			comment:
-				"Joanna's coaching on time management and planning has been a game-changer. Her strategies for project management and team leadership have streamlined our processes, and I feel more in control of my workload than ever before. Highly recommend her sessions!",
+				"Ivan Moreira is a great person and an excellent professional. Working with him in class assignments and projects for school was always a great experience because he knows how to be part of a team. He learns very fast and he is extremely dedicated.",
 		},
 	];
 	return (

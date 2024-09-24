@@ -43,7 +43,7 @@ const Events = () => {
         <div className="flex justify-between gap-10  flex-col z-10 bg-transparent">
           <HeadingText>
             {" "}
-            Join Our Newsletter Community For Regular Inspiration
+            Stay Ahead With Expert Tips - Join Our Newsletter
           </HeadingText>
           <form  onSubmit={handleSubmit} className="">
             <input

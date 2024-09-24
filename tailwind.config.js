@@ -12,7 +12,7 @@ module.exports = {
 				publicSans: ["Public Sans", "sans-serif"],
 			},
 			colors: {
-				primary: "#8B7EF8",
+				primary: "#0ccead",
 				darkPrimary: "#01182C",
 				secondary: "#01182C",
 				neutral: "#F7F8F9",
