@@ -4,7 +4,7 @@ import Button from "../components/Button";
 import  {FaBars}  from "react-icons/fa6";
 import { useState } from "react";
 import Image from "next/image";
-import logo from "../assets/Inspire_me (4).png"
+import logo from "../assets/Colorful Modern Infinity Technology Free Logo.png"
 import Link from "next/link";
 
 
@@ -39,7 +39,7 @@ const Header = () => {
 				
 				<Link
 					href="/"
-					className="flex items-center gap-2 text-xl font-semibold w-24">
+					className="flex items-center gap-2 text-xl font-semibold w-36">
 								<Image src={logo} alt="logo" className="flex items-center gap-2 text-xl font-semibold"/>
 				</Link>
 				

@@ -3,6 +3,7 @@ import ctaImg  from "../assets/ctaBg.png";
 import Button from "../components/Button";
 import HeadingText from "../components/HeadingText";
 import ParagraphText from "../components/ParagraphText";
+import Link from "next/link";
 
 const CTA = () => {
 	return (
@@ -12,7 +13,14 @@ const CTA = () => {
 				<ParagraphText extraStyle="mb-10 z-10">
 				We are here to help you reach your goals. Book a free 15-minute call today <br /> to discover how we can support you on your journey.
 				</ParagraphText>
-				<Button zIndex="z-10">Book Now</Button>
+				
+				<Button zIndex="z-10">
+				<Link href="https://calendly.com/ivanmoreira/30min">
+
+					Book Now
+
+				</Link>
+					</Button>
 				<Image
 					src={ctaImg}
 					alt="image"

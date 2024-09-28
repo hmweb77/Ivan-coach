@@ -12,11 +12,14 @@ module.exports = {
 				publicSans: ["Public Sans", "sans-serif"],
 			},
 			colors: {
-				primary: "#0ccead",
+				primary: "#8906e6",
 				darkPrimary: "#01182C",
-				secondary: "#01182C",
+				secondary: "#c484f1",
 				neutral: "#F7F8F9",
 				textColor: "#01162C",
+// 				Secondary: #c484f1
+// Tertiary: #ff00e2 and 
+// #050deb
 			},
 			screens: {
 				sm: "400px",
