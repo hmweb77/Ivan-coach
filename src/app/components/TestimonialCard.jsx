@@ -9,13 +9,13 @@ const TestimonialCard = ({ name, jobTitle, comment }) => {
 		<section className="flex md:flex-row flex-col shadow-md rounded-md">
 			
 			<div className="px-10 py-8 ">
-				<Image
+				{/* <Image
 					src={quote}
 					alt="image"
 					className="h-12 w-12 mb-5"
-				/>
+				/> */}
 				<ParagraphText extraStyle="text-base mb-5">{comment}</ParagraphText>
-				<h2 className="font-semibold text-lg">{name}</h2>
+				<h2 className="font-semibold text-Tertiary text-lg">{name}</h2>
 				<ParagraphText extraStyle="text-sm">{jobTitle}</ParagraphText>
 			</div>
 		</section>
