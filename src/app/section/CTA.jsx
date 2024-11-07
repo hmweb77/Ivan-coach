@@ -16,9 +16,7 @@ const CTA = () => {
 				
 				<Button zIndex="z-10">
 				<Link href="https://calendly.com/ivanmoreira/30min">
-
 					Book Now
-
 				</Link>
 					</Button>
 				<Image

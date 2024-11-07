@@ -2,8 +2,9 @@ import HeadingText from "../components/HeadingText";
 import ParagraphText from "../components/ParagraphText";
 import Image from "next/image";
 import Button from "../components/Button";
-import her from "../assets/ivan-conf-2-res.jpg";
+import Link from "next/link";
 
+import aboutImg1 from "../assets/photoprofil.png";
 
 const Hero = () => {
   return (
@@ -17,11 +18,15 @@ const Hero = () => {
           Join us on a transformational journey to sharpen your leadership, conquer career challenges, and master communication for a life of success and fulfillment.
           </ParagraphText>
           <p className="flex gap-4 items-center w-full font-inter text-lg font-medium bg-transparent z-10">
-            <Button>Contact Us</Button>
+          <Button>
+            <Link href="https://calendly.com/ivanmoreira/30min">
+              Contact Us
+            </Link>
+          </Button>
           </p>
         </div>
         <Image
-          src={her}
+          src={aboutImg1}
           alt="image"
           className="lg:basis-4/12  md:h-[705px] md:w-[650px] lg:w-[850px] lg:h-auto mx-auto"
         />

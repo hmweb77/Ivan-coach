@@ -1,6 +1,6 @@
 import Image from "next/image";
 import aboutImg1 from "../assets/Ivan.png";
-
+import her from "../assets/ivan-conf-2-res.jpg";
 import HeadingText from "../components/HeadingText";
 import ParagraphText from "../components/ParagraphText";
 
@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section id="about" className=" px-10  mx-auto  ">
       <div className="flex lg:flex-row flex-col justify-center  gap-20 items-center py-14">
-        <Image src={aboutImg1} alt="coach image" />
+        <Image src={her} alt="coach image" />
 
         <div className="h-full  flex flex-col gap-10">
           <HeadingText>

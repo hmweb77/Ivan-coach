@@ -1,8 +1,8 @@
 
 import ParagraphText from "../components/ParagraphText";
-import serviceImg1 from "../assets/serviceImg1.png"
-import serviceImg2 from "../assets/serviceImg2.png"
-import serviceImg3 from "../assets/serviceImg3.png"
+import serviceImg1 from "../assets/ivan-conf-3.jpg"
+import serviceImg2 from "../assets/Screenshot 2024-11-07 at 18.36.39.png"
+import serviceImg3 from "../assets/ivan-conf.jpg"
 import Image from "next/image";
 
 const Services = () => {
