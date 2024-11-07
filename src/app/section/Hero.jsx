@@ -20,7 +20,7 @@ const Hero = () => {
           <p className="flex gap-4 items-center w-full font-inter text-lg font-medium bg-transparent z-10">
           <Button>
             <Link href="https://calendly.com/ivanmoreira/30min">
-              Contact Us
+              Contact us
             </Link>
           </Button>
           </p>
