@@ -15,7 +15,7 @@ const CTA = () => {
 				</ParagraphText>
 				
 				<Button zIndex="z-10">
-				<Link href="https://calendly.com/ivanmoreira/30min">
+				<Link href="https://calendly.com/ivanmoreira/30min"  target="blank">
 					Book Now
 				</Link>
 					</Button>

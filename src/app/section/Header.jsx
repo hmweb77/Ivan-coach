@@ -29,6 +29,10 @@ const Header = () => {
       name: "Blogs",
       href: "/blogs",
     },
+    {
+      name: "Workshops",
+      href: "/presentation",
+    },
   ];
 
   const handleNavigation = (link) => {
@@ -63,7 +67,7 @@ const Header = () => {
         {/* Brand Logo */}
         <Link
           href="/"
-          className="flex items-center gap-2 text-xl font-semibold w-36"
+          className="flex items-center gap-2 text-xl font-semibold w-24 md:w-36"
         >
           <Image
             src={logo}
@@ -90,7 +94,7 @@ const Header = () => {
             ))}
           </ul>
           <Button>
-            <Link href="https://calendly.com/ivanmoreira/30min">
+            <Link href="https://calendly.com/ivanmoreira/30min"  target="blank">
               Contact Us
             </Link>
           </Button>

@@ -1,45 +1,59 @@
-// schemas/blogPost.js
+// schemas/presentation.js
 export default {
-  name: 'blogPost',
+  name: 'presentation',
+  title: 'Presentation',
   type: 'document',
-  title: 'Blog Post',
   fields: [
     {
-      name: 'title',
+      name: 'name',
+      title: 'Presentation Name',
       type: 'string',
-      title: 'Title',
-      validation: Rule => Rule.required().error('Title is required.'),
     },
     {
       name: 'slug',
-      type: 'slug',
       title: 'Slug',
+      type: 'slug',
       options: {
-        source: 'title',
-        maxLength: 96,
-        slugify: input => input
-          .toLowerCase()
-          .replace(/\s+/g, '-')
-          .replace(/[^\w-]+/g, '')
-          .slice(0, 96)
-      },
-      validation: Rule => Rule.required().error('Slug is required'),
-    },
-    {
-      name: 'mainImage',
-      type: 'image',
-      title: 'Main Image',
-      options: {
-        hotspot: true,
+        source: 'name',
+        maxLength: 90,
       },
     },
     {
-      name: 'subtitle',
-      type: 'string',
-      title: 'Subtitle',
-      validation: Rule => Rule.max(100).error('Subtitle must be 100 characters or less.'),
+      name: 'images',
+      title: 'Images',
+      type: 'array',
+      of: [{
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+        fields: [
+          {
+            name: 'alt',
+            type: 'string',
+            title: 'Alt Text',
+          },
+          {
+            name: 'caption',
+            type: 'string',
+            title: 'Caption',
+          }
+        ]
+      }],
     },
-     {
+    {
+      name: 'duration',
+      title: 'Duration (hours)',
+      type: 'number',
+      initialValue: 1,
+    },
+    {
+      name: 'description',
+      title: 'Short Description',
+      type: 'text',
+      rows: 3,
+    },
+    {
       name: 'details',
       title: 'Detailed Content',
       type: 'array',
@@ -92,11 +106,31 @@ export default {
         }
       ],
     },
+  
     {
-      name: 'category',
-      type: 'reference',
-      title: 'Category',
-      to: [{ type: 'category' }],
+      name: 'buttonText',
+      title: 'Button Text',
+      type: 'string',
+      initialValue: 'Book Now',
     },
+    {
+      name: 'buttonLink',
+      title: 'Button Link',
+      type: 'url',
+    }
   ],
+  preview: {
+    select: {
+      title: 'name',
+      media: 'images.0',
+      duration: 'duration'
+    },
+    prepare({title, media, duration}) {
+      return {
+        title,
+        subtitle: `${duration} hour${duration === 1 ? '' : 's'}`,
+        media
+      }
+    }
+  }
 };

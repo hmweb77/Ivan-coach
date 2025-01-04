@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="bg-neutral">
       <div className="flex flex-col lg:h-screen gap-10 lg:gap-0  lg:flex-row  ">
-        <div className="md:px-20 px-10 py-24  flex justify-center items-center   flex-col gap-10  lg:bg-center lg:basis-8/12 relative bg-transparent">
+        <div className="md:px-20 px-10 py-8 md:py-24  flex justify-center items-center   flex-col gap-10  lg:bg-center lg:basis-8/12 relative bg-transparent">
           <HeadingText extraStyle="z-10 bg-transparent w-full xl:text-6xl">
           Unlock Your Potential and Lead with Confidence
           </HeadingText>
@@ -19,7 +19,7 @@ const Hero = () => {
           </ParagraphText>
           <p className="flex gap-4 items-center w-full font-inter text-lg font-medium bg-transparent z-10">
           <Button>
-            <Link href="https://calendly.com/ivanmoreira/30min">
+            <Link href="https://calendly.com/ivanmoreira/30min"  target="blank">
               Contact us
             </Link>
           </Button>
@@ -28,7 +28,7 @@ const Hero = () => {
         <Image
           src={aboutImg1}
           alt="image"
-          className="lg:basis-4/12  md:h-[705px] md:w-[650px] lg:w-[850px] lg:h-auto mx-auto"
+          className="lg:basis-4/12 w-64  md:h-[705px] md:w-[650px] lg:w-[850px] lg:h-auto mx-10"
         />
       </div>
     </section>
